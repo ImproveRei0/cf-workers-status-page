@@ -5,14 +5,14 @@ settings:
   daysInHistogram: 60 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
 
-  allmonitorsOperational: ' √ 所有站点工作正常666'
+  allmonitorsOperational: ' √ 所有站点工作正常'
   notAllmonitorsOperational: ' ※ 部分网站异常'
   monitorLabelOperational: '运行中'
   monitorLabelNotOperational: '已停止/失联'
   monitorLabelNoData: '无数据'
   dayInHistogramNoData: '无数据'
   dayInHistogramOperational: '一切正常'
-  dayInHistogramNotOperational: ' 次波动' # xx incident(s) recorded
+  dayInHistogramNotOperational: ' 次波动' # 
 
 monitors:
   - id: Wblog # unique identifier
@@ -25,9 +25,17 @@ monitors:
     linkable: false # allows the title to be a link, default=true
 
   - id: L.D.B.
-    name: Ly65的L.D.B.
+    name: ly65的L.D.B.
     description: 'L.D.B'
     url: 'https://wsw2.ly65.top/ldb/2023/09/'
+    method: GET
+    expectStatus: 200
+    linkable: false # allows the title to be a link, default=true
+
+  - id: VPS-ly65
+    name: ly65的VPS
+    description: 'L.D.B'
+    url: 'https://vps1.ly65.top/'
     method: GET
     expectStatus: 200
     linkable: false # allows the title to be a link, default=true
@@ -35,7 +43,7 @@ monitors:
   - id: JimaLink
     name: Jima的个人主页
     description: 'Jima的个人主页'
-    url: 'https://jimmma.top'
+    url: 'https://jimmma.top/'
     method: GET
     expectStatus: 200
     linkable: false # allows the title to be a link, default=true
@@ -43,7 +51,7 @@ monitors:
   - id: JimaNav
     name: Jima的导航页
     description: 'Jima的导航页'
-    url: 'https://nav.jimmma.top'
+    url: 'https://nav.jimmma.top/'
     method: GET
     expectStatus: 200
     linkable: false # allows the title to be a link, default=true
@@ -51,7 +59,7 @@ monitors:
   - id: 机密驿站
     name: 机密驿站
     description: '机密驿站'
-    url: 'https://sd.rei1.top'
+    url: 'https://sd.rei1.top/'
     method: GET
     expectStatus: 200
     linkable: false # allows the title to be a link, default=true
