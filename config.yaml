@@ -27,7 +27,7 @@ monitors:
   - id: L.D.B.
     name: Ly65的L.D.B.
     description: 'L.D.B'
-    url: 'https://wsw2.ly65.top/ldb/'
+    url: 'https://wsw2.ly65.top/ldb/2023/09/'
     method: GET
     expectStatus: 200
     linkable: false # allows the title to be a link, default=true
