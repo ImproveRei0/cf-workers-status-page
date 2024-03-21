@@ -7,8 +7,8 @@ settings:
 
   allmonitorsOperational: ' √ 所有站点工作正常'
   notAllmonitorsOperational: ' ！ 部分网站异常'
-  monitorLabelOperational: 'Operational'
-  monitorLabelNotOperational: 'Not Operational'
+  monitorLabelOperational: '运行中'
+  monitorLabelNotOperational: '已停止/失联'
   monitorLabelNoData: '无数据'
   dayInHistogramNoData: '无数据'
   dayInHistogramOperational: '一切正常'
@@ -28,6 +28,46 @@ monitors:
     name: jimmma.top
     description: 'Jima的个人主页'
     url: 'https://jimmma.top'
+    method: GET
+    expectStatus: 200
+    linkable: false # allows the title to be a link, default=true
+
+  - id: JimaNav
+    name: nav.jimmma.top
+    description: 'Jima的导航页'
+    url: 'https://nav.jimmma.top'
+    method: GET
+    expectStatus: 200
+    linkable: false # allows the title to be a link, default=true
+
+  - id: IPTV
+    name: nv6tv.rei1.top
+    description: 'IPTV源服务'
+    url: 'https://nv6tv.rei1.top'
+    method: GET
+    expectStatus: 200
+    linkable: false # allows the title to be a link, default=true
+
+  - id: IPTV(备用)
+    name: v6tv.rei1.top
+    description: 'IPTV源服务(备用)'
+    url: 'https://v6tv.rei1.top'
+    method: GET
+    expectStatus: 200
+    linkable: false # allows the title to be a link, default=true
+
+  - id: TVEPG
+    name: tvepg.rei1.top
+    description: 'EPG服务'
+    url: 'https://tvepg.rei1.top'
+    method: GET
+    expectStatus: 200
+    linkable: false # allows the title to be a link, default=true
+
+  - id: 机密驿站
+    name: sd.rei1.top
+    description: '机密驿站'
+    url: 'https://sd.rei1.top'
     method: GET
     expectStatus: 200
     linkable: false # allows the title to be a link, default=true
