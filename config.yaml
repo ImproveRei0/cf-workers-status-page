@@ -40,30 +40,6 @@ monitors:
     expectStatus: 200
     linkable: false # allows the title to be a link, default=true
 
-  - id: IPTV
-    name: nv6tv.rei1.top
-    description: 'IPTV源服务'
-    url: 'https://nv6tv.rei1.top'
-    method: GET
-    expectStatus: 200
-    linkable: false # allows the title to be a link, default=true
-
-  - id: IPTV(备用)
-    name: v6tv.rei1.top
-    description: 'IPTV源服务(备用)'
-    url: 'https://v6tv.rei1.top'
-    method: GET
-    expectStatus: 200
-    linkable: false # allows the title to be a link, default=true
-
-  - id: TVEPG
-    name: tvepg.rei1.top
-    description: 'EPG服务'
-    url: 'https://tvepg.rei1.top'
-    method: GET
-    expectStatus: 200
-    linkable: false # allows the title to be a link, default=true
-
   - id: 机密驿站
     name: sd.rei1.top
     description: '机密驿站'
@@ -71,5 +47,31 @@ monitors:
     method: GET
     expectStatus: 200
     linkable: false # allows the title to be a link, default=true
+
+  - id: IPTV
+    name: nv6tv.rei1.top
+    description: 'IPTV源服务'
+    url: 'http://4.216.147.218:3000/fmml_ipv6.m3u'
+    method: GET
+    expectStatus: 200
+    linkable: false # allows the title to be a link, default=true
+
+  - id: IPTV(备用)
+    name: v6tv.rei1.top
+    description: 'IPTV源服务(备用)'
+    url: 'http://8.130.99.175:3000/fmml_ipv6.m3u'
+    method: GET
+    expectStatus: 200
+    linkable: false # allows the title to be a link, default=true
+
+  - id: TVEPG
+    name: tvepg.rei1.top
+    description: 'EPG服务'
+    url: 'http://4.216.147.218:3000/epg/51zmt.xml'
+    method: GET
+    expectStatus: 200
+    linkable: false # allows the title to be a link, default=true
+
+
 
 
