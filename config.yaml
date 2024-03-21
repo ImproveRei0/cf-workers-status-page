@@ -16,7 +16,7 @@ settings:
 
 monitors:
   - id: Wblog # unique identifier
-    name: wblog.rei1.top
+    name: WBLOG
     description: '札记万物' # default=empty
     url: 'https://wblog.rei1.top/' # URL to fetch
     method: GET # default=GET
@@ -25,7 +25,7 @@ monitors:
     linkable: false # allows the title to be a link, default=true
 
   - id: JimaLink
-    name: jimmma.top
+    name: Jima的个人主页
     description: 'Jima的个人主页'
     url: 'https://jimmma.top'
     method: GET
@@ -33,7 +33,7 @@ monitors:
     linkable: false # allows the title to be a link, default=true
 
   - id: JimaNav
-    name: nav.jimmma.top
+    name: Jima的导航页
     description: 'Jima的导航页'
     url: 'https://nav.jimmma.top'
     method: GET
@@ -41,7 +41,7 @@ monitors:
     linkable: false # allows the title to be a link, default=true
 
   - id: 机密驿站
-    name: sd.rei1.top
+    name: 机密驿站
     description: '机密驿站'
     url: 'https://sd.rei1.top'
     method: GET
@@ -49,7 +49,7 @@ monitors:
     linkable: false # allows the title to be a link, default=true
 
   - id: IPTV
-    name: nv6tv.rei1.top
+    name: IPTV源服务
     description: 'IPTV源服务（注意此站点检测使用为分离工作模式）'
     url: 'http://status.nv6tv.improve-rei1.eu.org/fmml_ipv6.m3u'
     method: GET
@@ -57,7 +57,7 @@ monitors:
     linkable: false # allows the title to be a link, default=true
 
   - id: TVEPG
-    name: tvepg.rei1.top
+    name: EPG服务
     description: 'EPG服务（注意此站点检测使用为分离工作模式）'
     url: 'http://status.nv6tv.improve-rei1.eu.org/epg/51zmt.xml'
     method: GET
