@@ -1,5 +1,5 @@
 settings:
-  title: 'REI状态监测'
+  title: 'REI站点状态监测'
   url: 'https://status-page.eidam.dev' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
@@ -9,15 +9,15 @@ settings:
   notAllmonitorsOperational: ' ！ 部分网站异常'
   monitorLabelOperational: 'Operational'
   monitorLabelNotOperational: 'Not Operational'
-  monitorLabelNoData: 'No data'
-  dayInHistogramNoData: 'No data'
-  dayInHistogramOperational: 'All good'
+  monitorLabelNoData: '无数据'
+  dayInHistogramNoData: '无数据'
+  dayInHistogramOperational: '一切正常'
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
   - id: Wblog # unique identifier
     name: wblog.rei1.top
-    description: 'You write code. They handle the rest.' # default=empty
+    description: '札记万物' # default=empty
     url: 'https://wblog.rei1.top/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
@@ -30,10 +30,6 @@ monitors:
     url: 'https://jimmma.top'
     method: GET
     expectStatus: 200
-    linkable: true # allows the title to be a link, default=true
+    linkable: false # allows the title to be a link, default=true
 
-  - id: blog-cloudflare-com
-    name: The Cloudflare Blog
-    url: 'https://blog.cloudflare.com/'
-    method: GET
-    expectStatus: 200
+
