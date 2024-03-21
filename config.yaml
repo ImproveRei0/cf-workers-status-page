@@ -50,24 +50,16 @@ monitors:
 
   - id: IPTV
     name: nv6tv.rei1.top
-    description: 'IPTV源服务'
-    url: 'http://4.216.147.218:3000/fmml_ipv6.m3u'
-    method: GET
-    expectStatus: 200
-    linkable: false # allows the title to be a link, default=true
-
-  - id: IPTV(备用)
-    name: v6tv.rei1.top
-    description: 'IPTV源服务(备用)'
-    url: 'http://8.130.99.175:3000/fmml_ipv6.m3u'
+    description: 'IPTV源服务（注意此站点检测使用为分离工作模式）'
+    url: 'http://status.nv6tv.improve-rei1.eu.org/fmml_ipv6.m3u'
     method: GET
     expectStatus: 200
     linkable: false # allows the title to be a link, default=true
 
   - id: TVEPG
     name: tvepg.rei1.top
-    description: 'EPG服务'
-    url: 'http://4.216.147.218:3000/epg/51zmt.xml'
+    description: 'EPG服务（注意此站点检测使用为分离工作模式）'
+    url: 'http://status.nv6tv.improve-rei1.eu.org/epg/51zmt.xml'
     method: GET
     expectStatus: 200
     linkable: false # allows the title to be a link, default=true
