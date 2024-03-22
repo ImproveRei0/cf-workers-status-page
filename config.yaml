@@ -80,13 +80,7 @@ monitors:
     expectStatus: 200
     linkable: false # allows the title to be a link, default=true
 
-  - id: 青龙
-    name: 青龙
-    description: '白嫖神器'
-    url: 'http://4.216.147.218:5700/'
-    method: GET
-    expectStatus: 200
-    linkable: false # allows the title to be a link, default=true
+
 
 
 
