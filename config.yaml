@@ -34,7 +34,7 @@ monitors:
 
   - id: VPS-ly65
     name: ly65的VPS
-    description: 'L.D.B'
+    description: '主vps'
     url: 'https://vps1.ly65.top/'
     method: GET
     expectStatus: 200
@@ -76,6 +76,14 @@ monitors:
     name: EPG服务
     description: 'EPG服务（注意此站点检测使用为分离工作模式）'
     url: 'http://status.nv6tv.improve-rei1.eu.org/epg/51zmt.xml'
+    method: GET
+    expectStatus: 200
+    linkable: false # allows the title to be a link, default=true
+
+  - id: 青龙
+    name: 青龙
+    description: '白嫖神器'
+    url: 'http://4.216.147.218:5700/'
     method: GET
     expectStatus: 200
     linkable: false # allows the title to be a link, default=true
