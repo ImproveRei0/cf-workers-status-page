@@ -24,13 +24,7 @@ monitors:
     followRedirect: false # should fetch follow redirects, default=false
     linkable: false # allows the title to be a link, default=true
 
-  - id: L.D.B.
-    name: ly65的L.D.B.
-    description: 'L.D.B'
-    url: 'https://wsw2.ly65.top/ldb/2023/09/'
-    method: GET
-    expectStatus: 200
-    linkable: false # allows the title to be a link, default=true
+
 
   - id: VPS-ly65
     name: ly65的VPS
