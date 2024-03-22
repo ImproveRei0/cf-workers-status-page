@@ -101,12 +101,15 @@ export default function Index({ config, kvMonitors, kvMonitorsLastUpdate }) {
           </div>
           <div>
             <a
-              href="https://github.com/eidam/cf-workers-status-page"
+              href="https://github.com/ImproveRei0/cf-workers-status-page"
               target="_blank"
             >
-              REI1.TOP 时刻监测
+                REI1.TOP 时刻监测
             </a>
           </div>
+        </div>
+        <div className="text-center mt-4 text-sm">
+          润物细无声
         </div>
       </div>
     </div>
