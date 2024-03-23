@@ -64,13 +64,18 @@ export async function notifySlack(monitor, operational) {
 }
 
 export async function notifyTelegram(monitor, operational) {
-  const text = `Monitor *${monitor.name.replaceAll(
+  const warning = "Rei监控触发警告";
+  const text = `${warning}
+Monitor *${monitor.name.replaceAll(
     '-',
-    '\\-',
+    '\-',
   )}* changed status to *${getOperationalLabel(operational)}*
-  ${operational ? '✅' : '❌'} \`${monitor.method ? monitor.method : 'GET'} ${
+  ${operational ? '✅' : '❌'} `${monitor.method ? monitor.method : 'GET'} ${
     monitor.url
-  }\` \\- 👀 [Status Page](${config.settings.url})`
+  }` - 👀 [Status Page](${config.settings.url})`;
+  // ... The rest of your function will go here
+}
+
 
   const payload = new FormData()
   payload.append('chat_id', SECRET_TELEGRAM_CHAT_ID)
