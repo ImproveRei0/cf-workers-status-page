@@ -29,7 +29,7 @@ monitors:
   - id: VPS-ly65
     name: ly65的VPS
     description: '主vps'
-    url: 'https://vps1.ly65.top/'
+    url: 'https://vps1123.ly65.top/'
     method: GET
     expectStatus: 200
     linkable: false # allows the title to be a link, default=true
