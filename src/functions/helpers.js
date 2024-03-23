@@ -27,16 +27,16 @@ export async function notifySlack(monitor, operational) {
   const payload = {
     attachments: [
       {
-        fallback: `Monitor ${monitor.name} changed status to ${getOperationalLabel(operational)}`,
+        fallback: `监控 ${monitor.name} 状态变更为 ${getOperationalLabel(operational)}`,
         color: operational ? '#36a64f' : '#f2c744',
         blocks: [
           {
             type: 'section',
             text: {
               type: 'mrkdwn',
-              text: `Monitor *${
+              text: `监控 *${
                 monitor.name
-              }* changed status to *${getOperationalLabel(operational)}*`,
+              }* 状态变更为 *${getOperationalLabel(operational)}*`,
             },
           },
           {
@@ -46,31 +46,30 @@ export async function notifySlack(monitor, operational) {
                 type: 'mrkdwn',
                 text: `${operational ? ':white_check_mark:' : ':x:'} \`${
                   monitor.method ? monitor.method : 'GET'
-                } ${monitor.url}\` - :eyes: <${
-                  config.settings.url
-                }|Status Page>`,
+                } ${monitor.url}\` - :eyes: <https://status.rei1.top|状态页面>`,
               },
             ],
           },
         ],
       },
     ],
-  }
+  };
   return fetch(SECRET_SLACK_WEBHOOK_URL, {
     body: JSON.stringify(payload),
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-  })
+  });
 }
 
 export async function notifyTelegram(monitor, operational) {
-  const text = `Monitor *${monitor.name.replaceAll(
+  const text = `监控 *${monitor.name.replaceAll(
     '-',
     '\\-',
-  )}* changed status to *${getOperationalLabel(operational)}*
+  )}* 状态变更为 *${getOperationalLabel(operational)}*
   ${operational ? '✅' : '❌'} \`${monitor.method ? monitor.method : 'GET'} ${
     monitor.url
-  }\` \\- 👀 [Status Page](${config.settings.url})`
+  }\` \\- 👀 [状态页面](https://status.rei1.top)`
+}
 
   const payload = new FormData()
   payload.append('chat_id', SECRET_TELEGRAM_CHAT_ID)
