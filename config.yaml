@@ -18,7 +18,7 @@ monitors:
   - id: Wblog # unique identifier
     name: WBLOG
     description: '札记万物' # default=empty
-    url: 'https://wblog.rei1.top/' # URL to fetch
+    url: 'https://wblog77.rei1.top/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
