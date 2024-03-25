@@ -35,7 +35,7 @@ monitors:
     linkable: false # allows the title to be a link, default=true
     
   - id: JimaLink
-    name: Jima的个人主页
+    name: JimaLink
     description: 'Jima的个人主页'
     url: 'https://jimmma.top/'
     method: GET
@@ -43,7 +43,7 @@ monitors:
     linkable: false # allows the title to be a link, default=true
 
   - id: JimaNav
-    name: Jima的导航页
+    name: JimaNav
     description: 'Jima的导航页'
     url: 'https://nav.jimmma.top/'
     method: GET
