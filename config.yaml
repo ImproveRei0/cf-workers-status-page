@@ -69,7 +69,7 @@ monitors:
   - id: TVEPG
     name: EPG服务
     description: 'EPG服务（注意此站点检测使用为分离工作模式）'
-    url: 'http://status.nv6tv.improve-rei1.eu.org/epg/51zmt.xml'
+    url: 'http://4.216.147.218:3000/epg/51zmt_cc.xml'
     method: GET
     expectStatus: 200
     linkable: false # allows the title to be a link, default=true
