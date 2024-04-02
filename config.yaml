@@ -50,13 +50,7 @@ monitors:
     expectStatus: 200
     linkable: false # allows the title to be a link, default=true
 
-  - id: 机密驿站
-    name: 机密驿站
-    description: '机密驿站'
-    url: 'https://sd.rei1.top/'
-    method: GET
-    expectStatus: 200
-    linkable: false # allows the title to be a link, default=true
+
 
   - id: IPTV
     name: IPTV源服务
@@ -66,13 +60,6 @@ monitors:
     expectStatus: 200
     linkable: false # allows the title to be a link, default=true
 
-  - id: TVEPG
-    name: EPG服务
-    description: 'EPG服务（注意此站点检测使用为分离工作模式）'
-    url: 'http://4.216.147.218:3000/epg/51zmt_cc.xml'
-    method: GET
-    expectStatus: 200
-    linkable: false # allows the title to be a link, default=true
 
 
 
