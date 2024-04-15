@@ -63,7 +63,7 @@ monitors:
   - id: IPTV
     name: IPTV源服务
     description: 'IPTV源服务（注意此站点检测使用为分离工作模式）'
-    url: 'http://status.nv6tv.improve-rei1.eu.org/fmml_ipv6.m3u'
+    url: 'http://status.nv6tv.improve-rei1.eu.org/ycl_iptv.m3u'
     method: GET
     expectStatus: 200
     linkable: false # allows the title to be a link, default=true
