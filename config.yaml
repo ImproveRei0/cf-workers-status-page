@@ -51,6 +51,14 @@ monitors:
     linkable: false # allows the title to be a link, default=true
 
 
+  - id: Alist
+    name: 云上NAS
+    description: 'Alist'
+    url: 'https://alist.rei1.top/'
+    method: GET
+    expectStatus: 200
+    linkable: false # allows the title to be a link, default=true
+
 
   - id: IPTV
     name: IPTV源服务
