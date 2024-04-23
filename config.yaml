@@ -52,11 +52,11 @@ monitors:
 
 
   - id: Alist
-    name: 云上NAS
+    name: <del>云上NAS</del>(暂停)
     description: 'Alist'
     url: 'https://alist.rei1.top/'
     method: GET
-    expectStatus: 200
+    expectStatus: 523
     linkable: false # allows the title to be a link, default=true
 
 
