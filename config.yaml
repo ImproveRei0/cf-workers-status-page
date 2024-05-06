@@ -56,7 +56,7 @@ monitors:
     description: 'Alist'
     url: 'https://alist.rei1.top/'
     method: GET
-    expectStatus: 523
+    expectStatus: 200
     linkable: false # allows the title to be a link, default=true
 
 
