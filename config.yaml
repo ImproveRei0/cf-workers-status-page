@@ -52,7 +52,7 @@ monitors:
 
 
   - id: Alist
-    name: 云上NAS(暂停监控)
+    name: 云上NAS
     description: 'Alist'
     url: 'https://alist.rei1.top/'
     method: GET
