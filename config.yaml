@@ -59,10 +59,10 @@ monitors:
     linkable: false # allows the title to be a link, default=true
 
 
-  - id: Alist
-    name: 云上NAS
+  - id: PicX 图床
+    name: GITHUB图床
     description: 'Alist'
-    url: 'https://alist.rei1.top/'
+    url: 'https://jsd.cdn.zzko.cn/gh/ImproveRei0/picx-images-hosting@master/20240604/image.77dedlu1mz.webp'
     method: GET
     expectStatus: 200
     linkable: false # allows the title to be a link, default=true
