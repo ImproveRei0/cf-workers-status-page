@@ -35,18 +35,11 @@ monitors:
     linkable: false # allows the title to be a link, default=true
 
 
-  - id: BOT-WX
-    name: WXbot Frame
-    description: 'ROBOT'
-    url: '120.26.219.99:7600'
-    method: GET
-    expectStatus: 200
-    linkable: false # allows the title to be a link, default=true
 
-  - id: sf-ly65
+  - id: b2-ly65
     name: 静态文件
     description: '静态文件'
-    url: 'https://sf-cip.ly65.top/gen_200'
+    url: 'https://b2-cip.ly65.top/c11cf3c1513baa3991683ed2/stick_bia-chan/sticker_13.png'
     method: GET
     expectStatus: 200
     linkable: false # allows the title to be a link, default=true
@@ -66,9 +59,6 @@ monitors:
     method: GET
     expectStatus: 200
     linkable: false # allows the title to be a link, default=true
-
-
-
 
 
   - id: IPTV
