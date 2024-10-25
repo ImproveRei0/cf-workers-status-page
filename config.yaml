@@ -24,7 +24,13 @@ monitors:
     followRedirect: false # should fetch follow redirects, default=false
     linkable: false # allows the title to be a link, default=true
 
-
+  - id: QDJZ1908
+    name: 忆清酒服务平台
+    description: '忆清酒'
+    url: 'https://qdjz1908.rei1.top/'
+    method: GET
+    expectStatus: 200
+    linkable: false # allows the title to be a link, default=true
 
   - id: VPS-ly65
     name: ly65的VPS
