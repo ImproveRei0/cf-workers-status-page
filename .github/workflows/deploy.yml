@@ -1,13 +1,13 @@
 name: Deploy
 
 on:
-  push:
-    branches:
-      - main
-  repository_dispatch:
+  #push:
+  #  branches:
+  #    - main
+  #repository_dispatch:
   workflow_dispatch:
-  schedule:
-    - cron: '0 0 1 * *'
+  #schedule:
+  #  - cron: '0 0 1 * *'
 
 jobs:
   deploy:
