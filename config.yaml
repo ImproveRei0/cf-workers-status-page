@@ -12,7 +12,7 @@ settings:
   monitorLabelNoData: '无数据'
   dayInHistogramNoData: '无数据'
   dayInHistogramOperational: '一切正常'
-  dayInHistogramNotOperational: ' 次波动' # 
+  dayInHistogramNotOperational: ' 次波动' 
 
 monitors:
   - id: Wblog # unique identifier
@@ -41,14 +41,6 @@ monitors:
     linkable: false # allows the title to be a link, default=true
 
 
-
-  - id: b2-ly65
-    name: 静态文件
-    description: '静态文件'
-    url: 'https://b2-cip.ly65.top/2b21b8370bb2127ed97b2373/line_store_stickers/bia-chen_sticker_21886085/sticker_13.png'
-    method: GET
-    expectStatus: 200
-    linkable: false # allows the title to be a link, default=true
     
   - id: JimaLink
     name: JimaLink
