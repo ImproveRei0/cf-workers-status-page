@@ -38,7 +38,7 @@ monitors:
     url: 'https://vps1.ly65.top/'
     method: GET
     expectStatus: 200
-    linkable: false # allows the title to be a link, default=true
+    linkable: false 
 
 
     
