@@ -40,6 +40,13 @@ monitors:
     expectStatus: 200
     linkable: false 
 
+  - id: 静态文件-ly65
+    name: b2存储
+    description: '主vps'
+    url: 'https://b2-cip.ly65.top/2b21b8370bb2127ed97b2373/line_store_stickers/bia-chen_sticker_21886085/sticker_13.png'
+    method: GET
+    expectStatus: 200
+    linkable: false 
 
     
   - id: JimaLink
